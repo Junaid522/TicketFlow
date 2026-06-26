@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  input, textarea {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+}
+
+@layer utilities {
+  .grid-cell {
+    @apply flex-shrink-0 h-8 cursor-crosshair border-r border-gray-200;
+  }
+  .grid-cell:hover {
+    @apply brightness-90;
+  }
+}
